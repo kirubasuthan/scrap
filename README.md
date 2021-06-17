@@ -39,8 +39,8 @@ kubectl get deployment
 
 # Simple http server spitting env
 
-`kubectl create deployment httpend --image=bretfisher/httpenv`
+`kubectl create deployment httpend --image=bretfisher/httpenv `
 `kubectl scale deployment/httpend --replicas=4 `
-`kubectl expose deployment httpend --port=8888`
+`kubectl expose deployment httpend --port=8888 `
 Create nodeport service
-`kubectl expose deployment httpend --port=8888 --name=httpend-np --type=NodePort`
+`kubectl expose deployment httpend --port=8888 --name=httpend-np --type=NodePort `
