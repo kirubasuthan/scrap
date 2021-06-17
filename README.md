@@ -41,4 +41,4 @@ kubectl get deployment
 `
 kubectl create deployment httpend --image=bretfisher/httpenv
 kubectl scale deployment/httpend --replicas=4
-
+`
