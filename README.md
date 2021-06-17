@@ -37,4 +37,8 @@ kubectl get deployment
 
 `kubectl expose deployment tomcat-deployment --type=LoadBalancer --port=8080 --target-port=8080 --name tomcat-load-balancer`
 
+# Simple http server spitting env
+`
+kubectl create deployment httpend --image=bretfisher/httpenv
+kubectl scale deployment/httpend --replicas=4
 
