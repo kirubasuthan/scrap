@@ -5,7 +5,7 @@ To Share notes
 `kubectl create deployment hello-world --image=k8s.gcr.io/echoserver:1.4`
 
 ## Create service 
-`kubectl expose deployment hello-world --type=NodePort --port=8080
+`kubectl expose deployment hello-world --type=NodePort --port=8080`
 
 ## Enable port forwarding and view the web service in http://localhost:7000
 
