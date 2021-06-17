@@ -2,7 +2,7 @@
 To Share notes
 
 ## Create Minikube deployment
-`kubectl create deployment hello-world --image=k8s.gcr.io/echoserver:1.4`
+`kubectl create deployment hello-world --image=k8s.gcr.io/echoserver:1.4` 
 
 ## Create service 
 `kubectl expose deployment hello-world --type=NodePort --port=8080`
@@ -12,21 +12,21 @@ To Share notes
 `kubectl port-forward services/hello-world 7000:8080 &`
 
 ## Delete the deployment
-`kubectl delete service hello-world `
+`kubectl delete service hello-world ` </BR>
  kubectl delete deployment hello-world `
 
 ## Get details 
 `
-kubectl get pod
-kubectl get services
-kubectl get deployment
+kubectl get pod </BR>
+kubectl get services </BR>
+kubectl get deployment </BR>
 `
 
 ## Bring up Tomcat 
 
-`kubectl apply -f deployment.yaml `
-`kubectl expose deployment tomcat-deployment --type=NodePort `
-`minikube service tomcat-deployment --url`
+`kubectl apply -f deployment.yaml ` </BR>
+`kubectl expose deployment tomcat-deployment --type=NodePort ` </BR>
+`minikube service tomcat-deployment --url`</BR>
 
 `kubectl describe pod <pod-name>`
 
@@ -39,8 +39,8 @@ kubectl get deployment
 
 # Simple http server spitting env
 `kubectl create deployment httpend --image=bretfisher/httpenv ` </BR>
-`kubectl scale deployment/httpend --replicas=4 `
-`kubectl expose deployment httpend --port=8888 `
+`kubectl scale deployment/httpend --replicas=4 ` </BR>
+`kubectl expose deployment httpend --port=8888 `</BR>
  
 Create nodeport service
 `kubectl expose deployment httpend --port=8888 --name=httpend-np --type=NodePort `
