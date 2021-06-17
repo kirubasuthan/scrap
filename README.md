@@ -39,6 +39,6 @@ kubectl get deployment
 
 # Simple http server spitting env
 `
-kubectl create deployment httpend --image=bretfisher/httpenv 
-kubectl scale deployment/httpend --replicas=4 
+kubectl create deployment httpend --image=bretfisher/httpenv. 
+kubectl scale deployment/httpend --replicas=4. 
 `
