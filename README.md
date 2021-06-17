@@ -43,4 +43,13 @@ kubectl get deployment </BR>
 `kubectl expose deployment httpend --port=8888 `</BR>
  
 Create nodeport service</BR>
-`kubectl expose deployment httpend --port=8888 --name=httpend-np --type=NodePort `
+`kubectl expose deployment httpend --port=8888 --name=httpend-np --type=NodePort ` </br>
+
+# Misc commands
+
+`kubectl api-resources ` </br>
+`kubectl explain services --recursive `
+`kubectl explain service.spec `
+`kubectl explain deployment.spec `
+
+
