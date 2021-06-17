@@ -42,5 +42,5 @@ kubectl get deployment </BR>
 `kubectl scale deployment/httpend --replicas=4 ` </BR>
 `kubectl expose deployment httpend --port=8888 `</BR>
  
-Create nodeport service
+Create nodeport service</BR>
 `kubectl expose deployment httpend --port=8888 --name=httpend-np --type=NodePort `
